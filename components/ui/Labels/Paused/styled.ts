@@ -1,0 +1,25 @@
+import styled from 'styled-components';
+
+const Styled = () => {};
+
+const Container = styled.div`
+  display: inline-block;
+  background-color: #FDD7E4;
+  box-shadow: rgb(0 0 0 / 5%) 1px 2px 5px 0px;
+  border-radius: 14px;
+  margin: 0px 2px;
+`;
+
+const Text = styled.span`
+  display: inline-block;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  color: #F31260;
+  padding: 4px 6px;
+`;
+
+Styled.Container = Container;
+Styled.Text = Text;
+
+export default Styled;
