@@ -2,9 +2,13 @@ import styled from 'styled-components';
 
 const Styled = () => {};
 
-const Container = styled.div`
+interface ContainerStyledProps {
+  fluid?: boolean;
+}
+
+const Container = styled.div<ContainerStyledProps>`
   overflow: visible;
-  max-width: 400px;  
+  max-width: ${props => props.fluid ? '100%' : '400px'};  
   width: 100%;
   background-color: #FFF;
   border-radius: 14px;

@@ -5,7 +5,7 @@ import Styled from './styled';
 
 const Default: React.FC<DefaultProps> = (props): React.ReactElement => {
   return(
-    <Styled.Container>
+    <Styled.Container fluid={props.fluid}>
       { props.children }
     </Styled.Container>
   );
