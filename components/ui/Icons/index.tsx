@@ -5,13 +5,15 @@ import EyeSlash from './EyeSlash';
 import Stack3D from './Stack3D';
 import XCircle from './XCircle';
 
-const Icons: {
+interface IconsComponents {
   ArrowBack: React.FC;
   Eye: React.FC;
   EyeSlash: React.FC;
   Stack3D: React.FC;
   XCircle: React.FC;
-} = (): void => { };
+};
+
+const Icons: IconsComponents = (): void => {};
 
 Icons.ArrowBack = ArrowBack;
 Icons.Eye = Eye;
