@@ -1,4 +1,6 @@
-const Eye = () => {
+import React from 'react';
+
+const Eye = (): React.ReactElement => {
   return (
     <svg 
       xmlns="http://www.w3.org/2000/svg" 

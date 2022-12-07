@@ -1,4 +1,6 @@
-const XCircle = () => {
+import React from 'react';
+
+const XCircle = (): React.ReactElement => {
   return (
     <svg 
       xmlns="http://www.w3.org/2000/svg" 
