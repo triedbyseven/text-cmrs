@@ -19,7 +19,7 @@ const Dashboard: NextPage = () => {
           height='100%'
         >
           <Layout.Column 
-            width='400px' 
+            width='300px' 
             height='100%' 
             padding='0px'
           >
@@ -28,7 +28,7 @@ const Dashboard: NextPage = () => {
           </Layout.Column>
           <Layout.Column 
             flex='1' 
-            padding='0px'
+            padding='0px 15px'
           >
             {/* Content Here */}
             <Components.Content />
