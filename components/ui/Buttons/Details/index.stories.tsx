@@ -1,17 +1,17 @@
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
-import Edit from '.';
+import Details from '.';
 
 export default {
-  title: 'Components/Buttons/Edit',
-  component: Edit 
-} as ComponentMeta<typeof Edit>;
+  title: 'Components/Buttons/Details',
+  component: Details 
+} as ComponentMeta<typeof Details>;
 
-const Template: ComponentStory<typeof Edit> = (args): React.ReactElement => <Edit {...args} />;
+const Template: ComponentStory<typeof Details> = (args): React.ReactElement => <Details {...args} />;
 
 export const Primary = Template.bind({});
 
 Primary.args = {
-  label: "Edit user",
+  label: "Details",
   onClick: () => console.log('Emitting')
 };
