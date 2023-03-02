@@ -24,7 +24,7 @@ const Default: React.FC<DefaultProps> = (props): React.ReactElement => {
               <Buttons.Edit label='Edit user' onClick={() => console.log('Emitting')} />
             </Layout.Column>
             <Layout.Column>
-              <Buttons.Edit label='Edit user' onClick={() => console.log('Emitting')} />
+              <Buttons.Delete label='Delete user' onClick={() => console.log('Emitting')} />
             </Layout.Column>
           </Layout.Row>
         </Layout.Column>

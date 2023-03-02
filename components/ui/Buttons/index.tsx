@@ -13,6 +13,8 @@ import Edit from './Edit';
 import { EditProps } from './Edit/interfaces';
 import Details from './Details';
 import { DetailsProps } from './Details/interfaces';
+import Delete from './Delete';
+import { DeleteProps } from './Delete/interfaces';
 
 const Buttons: {
   Default: React.FC<DefaultProps>;
@@ -22,6 +24,7 @@ const Buttons: {
   ToggleVisibility: React.FC<ToggleVisibilityProps>;
   Edit: React.FC<EditProps>;
   Details: React.FC<DetailsProps>;
+  Delete: React.FC<DeleteProps>;
 } = (): void => {};
 
 Buttons.Default = Default;
@@ -31,5 +34,6 @@ Buttons.ClearPassword = ClearPassword;
 Buttons.ToggleVisibility = ToggleVisibility;
 Buttons.Edit = Edit;
 Buttons.Details = Details;
+Buttons.Delete = Delete;
 
 export default Buttons;

@@ -5,6 +5,7 @@ import EyeSlash from './EyeSlash';
 import PencilSquare from './PencilSquare';
 import Stack3D from './Stack3D';
 import XCircle from './XCircle';
+import Trash from './Trash';
 
 interface IconsComponents {
   ArrowBack: React.FC;
@@ -13,6 +14,7 @@ interface IconsComponents {
   PencilSquare: React.FC;
   Stack3D: React.FC;
   XCircle: React.FC;
+  Trash: React.FC;
 };
 
 const Icons: IconsComponents = (): void => {};
@@ -23,5 +25,6 @@ Icons.EyeSlash = EyeSlash;
 Icons.PencilSquare = PencilSquare;
 Icons.Stack3D = Stack3D;
 Icons.XCircle = XCircle;
+Icons.Trash = Trash;
 
 export default Icons;
