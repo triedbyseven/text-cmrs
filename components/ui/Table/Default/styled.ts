@@ -9,6 +9,7 @@ const Container = styled.div`
 const Header = styled.div`
   width: 100%; 
   background-color: #F0F3F5;
+  border-radius: 14px;
 `;
 
 const Body = styled.div`
