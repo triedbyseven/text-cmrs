@@ -1,21 +1,23 @@
 import React, { useState } from 'react';
 import { GroupItem } from '../../../../data/groupItems';
+import Buttons from '../../Buttons';
 import Labels from '../../Labels';
 import Layout from '../../Layout';
 import { DefaultProps } from './interfaces';
 import Styled from './styled';
 
-
 const Default: React.FC<DefaultProps> = (props): React.ReactElement => {
   const [state, setState] = useState<GroupItem[]>(props.groups);
 
   const renderGroups = (): React.ReactElement[] => {
-    return state.map((group: GroupItem) => (
-      <Layout.Row key={ group.id }>
-        <Layout.Column>{ group.name }</Layout.Column>
-        <Layout.Column>{ group.lead }</Layout.Column>
-        <Layout.Column>{ group.status === 'active' ? <Labels.Active /> : <Labels.Paused /> }</Layout.Column>
-        <Layout.Column></Layout.Column>
+    return state.map((group: GroupItem): React.ReactElement => (
+      <Layout.Row key={ group.id } height={67}>
+        <Layout.Column display='flex' alignItems='center'>{ group.name }</Layout.Column>
+        <Layout.Column display='flex' alignItems='center'>{ group.lead }</Layout.Column>
+        <Layout.Column display='flex' alignItems='center'>{ group.status === 'active' ? <Labels.Active /> : <Labels.Paused /> }</Layout.Column>
+        <Layout.Column display='flex' alignItems='center'>
+          <Buttons.Edit label='Edit user' onClick={() => console.log('Emitting')} />
+        </Layout.Column>
       </Layout.Row>
     ));
   };
