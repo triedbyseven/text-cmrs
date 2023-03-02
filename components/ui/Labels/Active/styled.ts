@@ -13,6 +13,7 @@ const Container = styled.div`
 const Text = styled.span`
   display: inline-block;
   font-size: 10px;
+  font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 0.6px;
   color: #14A452;
